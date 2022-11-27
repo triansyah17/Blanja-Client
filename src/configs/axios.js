@@ -1,6 +1,6 @@
 import axios from "axios";
-import { createBrowserHistory } from "history";
-const history = createBrowserHistory();
+// import { createBrowserHistory } from "history";
+// const history = createBrowserHistory();
 const axiosApiInstace = axios.create({
   baseURL: process.env.REACT_APP_API_BACKEND,
 });
@@ -34,8 +34,8 @@ axiosApiInstace.interceptors.response.use(
     )
       // alert ('jangan di ubah tokennya ya bro...')
 
-      history.push("/login");
-    localStorage.removeItem("token");
+      // history.push("/login");
+      localStorage.removeItem("token");
     localStorage.removeItem("refreshToken");
 
     // Any status codes that falls outside the range of 2xx cause this function to trigger
