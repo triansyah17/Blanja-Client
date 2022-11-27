@@ -1,28 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import "../StyleHome.css";
-import logo from "../../../../assets/image/Logo.svg";
+import logo from "../../../../assets/image/logo.png";
 import filter from "../../../../assets/image/filter.png";
 import Profil from "../../../../assets/image/profil.png";
 import bell from "../../../../assets/image/bell (1) 1.png";
 import mail from "../../../../assets/image/mail (3) 1.png";
 import cart from "../../../../assets/image/search.svg";
 import { Link } from "react-router-dom";
-import axios from "axios"
+import axios from "axios";
 import ModalFilter from "../../../base/modal/ModalFilter";
 import { useNavigate } from "react-router-dom";
-
 
 const NavbarAfterLogin = () => {
   const navigate = useNavigate();
   // const { user } = useSelector((state) => state.auth);
-  const [user, setUser] = useState()
-  console.log(user)
+  const [user, setUser] = useState();
+  console.log(user);
   const [search, setSearch] = useState([]);
   const handleSearch = () => {
-      navigate({
+    navigate({
       pathname: "/myProducts",
-      search: "?search=" + search ,
+      search: "?search=" + search,
     });
   };
   useEffect(() => {
@@ -38,9 +37,8 @@ const NavbarAfterLogin = () => {
         },
       }
     );
-    console.log(response)
+    console.log(response);
     setUser(response.data.data);
-    
   };
   return (
     <div className="container">
@@ -66,7 +64,7 @@ const NavbarAfterLogin = () => {
           >
             <ul className="navbar-nav mb-2 mb-md-0  me-auto">
               <li>
-                  <div className="input-group rounded nav-search">
+                <div className="input-group rounded nav-search">
                   <input
                     type="text"
                     className="form-control search-input"
@@ -82,28 +80,30 @@ const NavbarAfterLogin = () => {
                   >
                     <i className="bi bi-search" onClick={handleSearch}></i>
                   </span>
-              </div>
+                </div>
               </li>
               <li>
-              <button className="btn filter1">
-                <ModalFilter />
-            </button>
-
+                <button className="btn filter1">
+                  <ModalFilter />
+                </button>
               </li>
-            
-            
-          </ul>
+            </ul>
             <form className="ms-4  end">
               <Link to="/checkout">
-              <img src={cart} alt="" className="icon-cart mb-2" />
+                <img src={cart} alt="" className="icon-cart mb-2" />
               </Link>
               <img src={bell} alt="" className="icon-cart ms-2 mb-2" />
               <img src={mail} alt="" className="icon-cart ms-2 me-4 mb-2" />
               <Link to="/profil">
-                <img src={user?.image ? user.image : Profil} alt="profile" width={40} height={40} className="rounded-circle" />
+                <img
+                  src={user?.image ? user.image : Profil}
+                  alt="profile"
+                  width={40}
+                  height={40}
+                  className="rounded-circle"
+                />
               </Link>
             </form>
-           
           </div>
         </div>
       </nav>
@@ -128,7 +128,11 @@ const NavbarAfterLogin = () => {
             <img src={mail} alt="" className="icon-cart m-auto" />
           </button>
           <Link to="/profil">
-            <img src={user?.image ? user.image : Profil} alt="profile"  className="rounded-circle" />
+            <img
+              src={user?.image ? user.image : Profil}
+              alt="profile"
+              className="rounded-circle"
+            />
           </Link>
         </div>
       </nav>
