@@ -197,6 +197,8 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Frontend Blanja`](https://github.com/triansyah17/Blanja-Client)
 
+:rocket: [`Blanja Demo`](https://blanja-client.vercel.app/)
+
 <!-- :rocket: [`Web Service`](https://) -->
 
 <!-- :rocket: [`Demo Blanja`](https://) -->
