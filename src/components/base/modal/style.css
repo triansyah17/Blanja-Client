@@ -1,0 +1,92 @@
+.btn-filter{
+    background-color: transparent;
+    border: none;
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+}
+.btn-filter img{
+  margin-top: -25px;
+  margin-left: -10px;
+}
+.btn-filter:hover, .btn-filter:focus, .btn-filter:active{
+    background-color: transparent;
+    border: none;
+}
+
+  .close{
+    font-size: 29.5px;
+    position: absolute;
+    left: 0;
+  }
+  li{
+    list-style: none;
+  }
+  .modal-body ul li .colorBtn{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 46px;
+    width: 44px;
+  }
+  .border-active{
+    border: 1px solid #DB3022 !important;
+    border-radius: 50%;
+  }
+  .color{
+    margin: -2px;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .modal-body ul li{
+    
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .modal-body ul li button{
+    border-radius: 10px;
+    min-width: 46px;
+    height: 46px;
+    border: 1px solid #8E8E93;
+  }
+
+  .bg-white{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .bg-active{
+    background-color: #DB3022 !important;
+  }
+  .bg-none{
+    background-color: transparent;
+  }
+  .btn-Discard{
+    width: 150px;
+    height: 35px;
+    color: black;
+    font-weight: 600;
+    border: 1px solid black;
+  }
+  .btn-Apply{
+    width: 150px;
+    border: none;
+   color: white;
+  }
+  .color{
+    margin-left: -8px !important;
+  }
+  .btn-footer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .colorBtn{
+    background-color: transparent;
+  }
+  .size{
+    background-color: transparent;
+  }
+  .category{
+    background-color: transparent;
+    color: #0f0f0ff0;
+  }
