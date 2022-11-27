@@ -41,12 +41,7 @@ const Navbar = ({ onChange }) => {
   };
   return (
     <div>
-      <NavbarBase
-        src={logo}
-        srcFilter={filter}
-        srcCart={cart}
-        onChange={onChange}
-      ></NavbarBase>
+      <NavbarBase src={logo} onChange={onChange}></NavbarBase>
       <nav className="footer-nav bg-light text-center fixed-bottom">
         {user?.id ? (
           <div className="content mt-2 mb-2">

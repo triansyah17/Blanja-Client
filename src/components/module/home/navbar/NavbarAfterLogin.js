@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import "../StyleHome.css";
-import logo from "../../../../assets/image/logo.png";
+import Logo from "../../../../assets/image/logo.png";
 import filter from "../../../../assets/image/filter.png";
 import Profil from "../../../../assets/image/profil.png";
 import bell from "../../../../assets/image/bell (1) 1.png";
@@ -45,7 +45,7 @@ const NavbarAfterLogin = () => {
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container">
           <Link to="/home">
-            <img src={logo} alt="logo" className="" />
+            <img src={Logo} alt="logo" className="" />
           </Link>
           <button
             className="navbar-toggler"
